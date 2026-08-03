@@ -48,7 +48,7 @@ src/
 
 ![Home](./screenshots/home.png)
 
-### 🔍 Search Page
+### 🔍 Save Page
 
 ![Save](./screenshots/save.png)
 
