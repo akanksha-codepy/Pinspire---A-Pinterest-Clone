@@ -44,7 +44,13 @@ src/
 
 ## 📸 Screenshots
 
-> Screenshots will be added after project completion.
+### 🏠 Home Page
+
+![Home](./screenshots/home.png)
+
+### 🔍 Search Page
+
+![Save](./screenshots/save.png)
 
 ---
 
