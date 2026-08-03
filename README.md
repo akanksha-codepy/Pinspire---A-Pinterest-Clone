@@ -1,35 +1,104 @@
-# Pinterest Clone — React + Vite
+# 📌 Pinspire
 
-This is a small Pinterest-inspired gallery built with React and Vite. It includes:
+A Pinterest-inspired image discovery platform built using React and Vite. This project recreates the modern Pinterest interface with a responsive masonry grid, smooth navigation, and a clean user experience.
 
- - Responsive masonry layout
- - Debounced search (local JSON fallback)
- - Pexels integration via `VITE_PEXELS_API_KEY`
- - Simple card hover states and skeleton loading
+---
 
-Getting started
+## 🚀 Features
 
-1. Install dependencies
+- 🖼️ Responsive Masonry Layout
+- 🔍 Image Search
+- 📌 Pin Cards
+- ❤️ Save Pins UI
+- 👤 User Profile
+- 📱 Fully Responsive Design
+- ⚡ Fast Performance with Vite
+- 🎨 Modern UI
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Router
+- Unsplash API *(if you use it)*
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│── assets/
+│── components/
+│── pages/
+│── App.jsx
+│── main.jsx
+```
+
+---
+
+## 📸 Screenshots
+
+> Screenshots will be added after project completion.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
 
 ```bash
-cd /d "e:\project\Pinterest Clone"
+git clone https://github.com/akanksha-codepy/Pinspire.git
+```
+
+Go to the project directory
+
+```bash
+cd Pinspire
+```
+
+Install dependencies
+
+```bash
 npm install
 ```
 
-2. (Optional) Add an API key
-
-- Copy `.env.example` to `.env.local` and set your key(s):
-  - `VITE_PEXELS_API_KEY=your_pexels_api_key_here`
-
-3. Run the dev server
+Run the development server
 
 ```bash
 npm run dev
 ```
 
-Open http://localhost:5173
+---
 
-Notes
+## 🎯 Future Improvements
 
-- If you run into dependency or audit issues, prefer running commands from Command Prompt (cmd.exe) on Windows rather than PowerShell to avoid script execution policy issues.
-- To use newer Vite/plugin versions, you may need to upgrade packages and adjust configs.
+- Authentication
+- Save Pins
+- Create Pin
+- Infinite Scrolling
+- Dark Mode
+- User Dashboard
+
+---
+
+## 👩‍💻 Author
+
+**Akanksha Uchale**
+
+GitHub: https://github.com/akanksha-codepy
+
+Portfolio: https://akanksha-uchale-portfolio.netlify.app/
+
+LinkedIn: https://www.linkedin.com/in/akanksha-uchale/
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
