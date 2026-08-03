@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Sunset Over Hills",
+    "description": "A peaceful hillside sunset with warm light.",
+    "tags": ["sunset", "landscape", "travel"],
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 2,
+    "title": "City Skyline",
+    "description": "The city lit up at night, with skyscrapers and soft reflections.",
+    "tags": ["city", "night", "architecture"],
+    "image": "https://images.unsplash.com/photo-1499346030926-9a72daac6c63?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 3,
+    "title": "Mountain Lake",
+    "description": "A tranquil mountain lake with turquoise water.",
+    "tags": ["mountain", "lake", "nature"],
+    "image": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 4,
+    "title": "Forest Morning",
+    "description": "Sunlight filters through a lush forest path.",
+    "tags": ["forest", "morning", "green"],
+    "image": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 5,
+    "title": "Creative Workspace",
+    "description": "A clean designer workspace with notebook and coffee.",
+    "tags": ["workspace", "design", "productivity"],
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 6,
+    "title": "Modern Architecture",
+    "description": "Minimalist concrete buildings and sky lines.",
+    "tags": ["architecture", "modern", "city"],
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 7,
+    "title": "Ocean Waves",
+    "description": "Rolling waves under a bright blue sky.",
+    "tags": ["ocean", "beach", "summer"],
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 8,
+    "title": "Cozy Café",
+    "description": "A warm café interior with drinks and pastries.",
+    "tags": ["cafe", "coffee", "cozy"],
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 9,
+    "title": "Street Art",
+    "description": "Vibrant mural painting in an urban alley.",
+    "tags": ["art", "street", "color"],
+    "image": "https://images.unsplash.com/photo-1500534314209-a26ecb9d3d0b?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 10,
+    "title": "Coastal Sunrise",
+    "description": "Morning light over cliffs and coastal waves.",
+    "tags": ["sunrise", "coast", "nature"],
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 11,
+    "title": "Anime Illustration",
+    "description": "Colorful anime-style illustration with city nightlife.",
+    "tags": ["anime", "illustration", "night"],
+    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=900&q=80&auto=format&fit=crop"
+  },
+  {
+    "id": 12,
+    "title": "Cozy Café Interior",
+    "description": "Warm café scene with coffee and pastries.",
+    "tags": ["cafe", "cozy", "coffee"],
+    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=900&q=80&auto=format&fit=crop"
+  }
+]

@@ -1,0 +1,109 @@
+:root {
+  --gap: 12px;
+}
+body { font-family: Inter, system-ui, Arial, sans-serif; margin:0; background: linear-gradient(180deg, #fffdf9 0%, #f8f7ff 100%); color: #111 }
+.site-header { padding: 12px 20px; border-bottom: 1px solid rgba(2,6,23,0.06); background: rgba(255,255,255,0.82); backdrop-filter: blur(10px) }
+.top-nav { position: sticky; top: 0; z-index: 40; background: rgba(255,255,255,0.9) }
+.logo a { font-weight: 700; font-size: 20px; color: #0f172a; text-decoration: none }
+.container { padding: 24px; max-width: 1200px; margin: 0 auto }
+.main-area { padding-bottom: 64px }
+.hero { padding: 28px 26px 24px; background: linear-gradient(145deg, rgba(124,58,237,0.15), rgba(6,182,212,0.12)); border-radius: 28px; margin-bottom: 18px; border: 1px solid rgba(124,58,237,0.08); box-shadow: 0 18px 50px rgba(124,58,237,0.08); }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; margin-bottom: 18px; border-radius: 999px; background: rgba(255,255,255,0.88); font-size: 13px; font-weight: 700; color: #5b21b6; box-shadow: inset 0 1px 0 rgba(255,255,255,0.7); }
+.hero-title { margin: 0; font-size: clamp(32px, 4vw, 48px); color:#0f172a; letter-spacing:-0.4px; font-weight:800; line-height:1.05 }
+.hero-sub { margin: 14px 0 0; color:#475569; font-size: 17px; max-width: 720px; line-height:1.7 }
+.hero-row { margin-top: 18px; display:flex; flex-wrap:wrap; gap: 10px }
+.pill { padding: 10px 14px; border-radius:999px; background: rgba(255,255,255,0.88); color:#4338ca; font-weight:700; font-size:13px; box-shadow: 0 10px 24px rgba(124,58,237,0.10); }
+.site-header .header-inner { display:grid; grid-template-columns: 260px minmax(640px, 1fr) 220px; align-items:center; gap:18px }
+.left-block { display:flex; align-items:center; gap:16px }
+.brand-link { display:flex; align-items:center; gap:12px; text-decoration:none }
+.brand { display:flex; align-items:center; gap:12px }
+.brand-icon { width:44px; height:44px; border-radius:16px; background:linear-gradient(135deg,#7c3aed,#06b6d4); color:#fff; font-weight:800; display:grid; place-items:center; box-shadow:0 12px 30px rgba(124,58,237,0.18) }
+.brand-text { display:flex; flex-direction:column; justify-content:center }
+.brand-label { font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#7c3aed; }
+.brand-name { font-size:18px; font-weight:800; color:#0f172a; }
+.nav-left { display:flex; gap:10px; align-items:center }
+.nav-pill { background:#fff; border-radius:999px; padding:8px 14px; border:1px solid rgba(71,85,105,0.12); text-decoration:none; color:#0f172a; font-weight:700; transition: transform .2s ease, box-shadow .2s ease }
+.nav-pill:hover { transform: translateY(-1px); box-shadow: 0 10px 24px rgba(124,58,237,0.10) }
+.center-block { display:flex; justify-content:center }
+.center-block .search { width: 100%; max-width: 980px }
+.right-block { display:flex; align-items:center; gap:12px; justify-self:end }
+.saved-pill { padding: 14px 22px; border-radius:999px; background: linear-gradient(90deg,#7c3aed,#06b6d4); color:#fff; font-weight:800; font-size:15px; box-shadow:0 14px 30px rgba(124,58,237,0.20); border:none }
+.saved-count { margin-left: 8px; opacity:0.85; }
+.icon-btn { background:transparent; border:none; font-size:18px; cursor:pointer }
+.nav-link { color:#374151; text-decoration:none; font-weight:600 }
+.avatar { width:36px; height:36px; display:inline-grid; place-items:center; background:linear-gradient(135deg,#7c3aed,#06b6d4); color:#fff; border-radius:999px; font-weight:700 }
+.saved-pill { padding: 12px 18px; border-radius:999px; background: linear-gradient(90deg,#7c3aed,#06b6d4); color:#fff; font-weight:700; font-size:15px; box-shadow:0 10px 24px rgba(124,58,237,0.18) }
+.search { margin: 18px 0 }
+.search-inner { display:flex; align-items:center; gap:10px; background:#fff; border-radius:999px; padding:14px 18px; box-shadow:0 10px 30px rgba(124,58,237,0.12) }
+.search input { flex:1; border: none; outline: none; font-size:16px; padding:12px 10px; color:#111827 }
+.search-icon { font-size:20px; color:#8b5cf6 }
+.search-clear { background:transparent; border:none; cursor:pointer; font-size:15px; color:#6b7280 }
+.search-note { margin: 12px 0; padding: 12px 16px; border-radius: 10px; background: #f8fafc; color: #334155; font-size: 14px; border: 1px solid #e2e8f0 }
+.chip-row { margin:14px 0 10px; display:flex; flex-wrap:wrap; gap:10px }
+.chips { margin:12px 0; display:flex; gap:8px }
+.chip { padding:7px 12px; background:linear-gradient(90deg,#ffffff,#f5f3ff); border-radius:999px; box-shadow:0 4px 12px rgba(124,58,237,0.08); cursor:pointer; font-size:13px; color:#4c1d95; font-weight:600 }
+.masonry { column-count:5; column-gap: var(--gap); }
+.provider-switch { display:inline-flex; gap:8px; margin: 8px 0 18px }
+.provider-btn { padding:6px 10px; border-radius:8px; border:1px solid #e6eef8; background:#fff; cursor:pointer; font-weight:600 }
+.provider-btn[disabled] { opacity:0.45; cursor:not-allowed }
+.provider-btn.active { background: linear-gradient(90deg,#7c3aed,#06b6d4); color:#fff; border-color:transparent }
+
+/* Collections panel */
+.collections-panel { position: fixed; right: 18px; top: 76px; width: 680px; max-width: calc(100% - 60px); height: calc(100% - 120px); background:#fff; box-shadow:0 20px 50px rgba(2,6,23,0.12); border-radius:12px; z-index:80; overflow:auto }
+.collections-header { display:flex; align-items:center; justify-content:space-between; padding:14px 18px; border-bottom:1px solid #f1f5f9 }
+.collections-list { display:flex }
+.collections-nav { width:160px; padding:12px; border-right:1px solid #f1f5f9 }
+.collections-content { padding:12px; flex:1 }
+.collection-item { display:flex; gap:8px; align-items:center; padding:8px; border-radius:8px; background:#fff; margin-bottom:8px }
+.collection-item img { width:120px; height:80px; object-fit:cover; border-radius:8px }
+.item-meta { flex:1 }
+.item-title { font-weight:600 }
+.item-actions { margin-top:6px }
+.collections-nav .chip { display:block; width:100%; text-align:left; margin-bottom:8px }
+.pin { break-inside: avoid; margin-bottom: var(--gap); background: linear-gradient(180deg,#ffffff,#f8f6ff); border-radius: 20px; overflow: hidden; box-shadow: 0 14px 36px rgba(15,23,42,0.09); transition: transform .22s ease, box-shadow .22s ease }
+.pin:hover { transform: translateY(-10px); box-shadow: 0 34px 70px rgba(15,23,42,0.16) }
+.pin img { width: 100%; display: block; border-bottom: 1px solid rgba(15,23,42,0.06); object-fit: cover; min-height: 240px; }
+.pin-title { padding: 14px 16px; font-size: 15px; color:#111827; font-weight:700; line-height:1.35 }
+.pin-link { display:block; text-decoration:none; color:inherit }
+
+
+
+@media (max-width: 1400px) {
+  .masonry { column-count: 4 }
+}
+@media (max-width: 1100px) {
+  .masonry { column-count: 3 }
+}
+@media (max-width: 700px) {
+  .masonry { column-count: 2 }
+}
+@media (max-width: 420px) {
+  .masonry { column-count: 1 }
+}
+
+.overlay { position:absolute; inset:0; display:flex; flex-direction:column; justify-content:space-between; padding:12px; background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.45) 100%); opacity:0; transition:opacity .18s ease }
+.pin figure { position:relative; margin:0 }
+.pin:hover .overlay { opacity:1 }
+.overlay-title { color:#fff; font-weight:700; text-shadow:0 2px 8px rgba(0,0,0,0.4) }
+.overlay-actions { display:flex; gap:8px }
+.btn { background:linear-gradient(90deg,#111827,#334155); color:#fff; border:none; padding:8px 12px; border-radius:999px; cursor:pointer; font-weight:700; box-shadow:0 10px 20px rgba(17,24,39,0.12) }
+.btn.small { padding:6px 10px; font-size:13px }
+.btn.small.saved { background:linear-gradient(90deg,#7c3aed,#06b6d4) }
+.btn.small { padding:6px 10px; font-size:13px }
+
+.no-results { padding: 24px; color:#6b7280; font-size:16px }
+
+.detail { padding: 16px }
+.detail img { max-width: 100%; height: auto }
+
+/* Skeletons */
+.skeleton { background: #fff; border-radius:10px; padding:0; box-shadow: 0 6px 16px rgba(2,6,23,0.04) }
+.skeleton-img { height: 180px; background: linear-gradient(90deg,#f3f4f6,#e5e7eb,#f3f4f6); background-size: 200% 100%; animation: shimmer 1.2s linear infinite }
+.skeleton-line { height: 14px; margin:12px; width:60%; background:#e9ecef; border-radius:6px }
+@keyframes shimmer { from { background-position: 200% 0 } to { background-position: -200% 0 } }
+
+/* Footer */
+.site-footer { border-top:1px solid rgba(2,6,23,0.04); margin-top:40px; background:#fff }
+.site-footer .container { display:flex; align-items:center; justify-content:space-between; padding:16px 24px }
+.small { font-size:13px }
+.muted { color:#6b7280 }
