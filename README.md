@@ -25,7 +25,9 @@ A Pinterest-inspired image discovery platform built using React and Vite. This p
 - HTML5
 - CSS3
 - React Router
-- Unsplash API *(if you use it)*
+- Unsplash API
+- Pexels API
+- Pixabay API
 
 ---
 
