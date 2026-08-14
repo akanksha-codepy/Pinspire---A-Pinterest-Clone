@@ -99,7 +99,7 @@ npm run dev
 
 **Akanksha Uchale**
 
-GitHub: https://github.com/akanksha-codepy
+GitHub: https://github.com/akanksha-uchale
 
 Portfolio: https://akanksha-uchale-portfolio.netlify.app/
 
