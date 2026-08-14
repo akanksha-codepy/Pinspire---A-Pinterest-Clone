@@ -4,7 +4,7 @@ import MasonryGrid from '../shared/MasonryGrid'
 import data from '../data/sample.json'
 import { searchPexels } from '../lib/pexels'
 import { searchPixabay } from '../lib/pixabay'
-import { searchUnsplash } from '../lib/unsplash'
+import { searchPhotos as searchUnsplash } from '../lib/unsplash'
 import Footer from '../shared/Footer'
 
 export default function Home({ query, setQuery, onSave, onRemove, isSaved }) {
@@ -17,7 +17,7 @@ export default function Home({ query, setQuery, onSave, onRemove, isSaved }) {
   const hasPexelsKey = !!import.meta.env.VITE_PEXELS_API_KEY
   const hasPixabayKey = !!import.meta.env.VITE_PIXABAY_API_KEY
   const hasUnsplashKey = !!import.meta.env.VITE_UNSPLASH_API_KEY || !!import.meta.env.VITE_UNSPLASH_ACCESS_KEY
-  const suggestions = ['sunset', 'city', 'forest', 'anime', 'cozy', 'beach', 'coffee']
+  const suggestions = ['All', 'Design', 'Fashion', 'Food', 'Travel', 'Home', 'Art', 'Nature']
 
   const handleSuggestion = (value) => {
     setQuery(value)
@@ -100,19 +100,20 @@ export default function Home({ query, setQuery, onSave, onRemove, isSaved }) {
     <div className="page-root">
       <main className="container main-area">
         <div className="hero">
-          <div className="hero-badge">Image ideas for every mood</div>
-          <h1 className="hero-title">Discover and save creative ideas</h1>
+          <div className="hero-glow hero-glow-one" aria-hidden="true" />
+          <div className="hero-glow hero-glow-two" aria-hidden="true" />
+          <p className="hero-kicker">Discover ideas</p>
+          <h1 className="hero-title">Pinspire</h1>
           <p className="hero-sub">Explore beautiful photos — search by keyword, browse curated scenes, and save favorites to your collection.</p>
           <div className="hero-row">
-            <span className="pill">Search smarter</span>
-            <span className="pill">Live API feed</span>
-            <span className="pill">Save favorites</span>
+            <span className="pill">Explore</span>
+            <span className="pill">Save</span>
           </div>
         </div>
 
         <div className="chip-row">
           {suggestions.map(term => (
-            <button key={term} type="button" className="chip" onClick={() => handleSuggestion(term)}>
+            <button key={term} type="button" className={`chip ${(!query && term === 'All') || query.toLowerCase() === term.toLowerCase() ? 'active' : ''}`} onClick={() => handleSuggestion(term === 'All' ? '' : term)}>
               {term}
             </button>
           ))}

@@ -6,11 +6,13 @@ import Header from './shared/Header'
 import Collections from './shared/Collections'
 
 const STORAGE_KEY = 'pc_collections'
+const THEME_KEY = 'pc_theme'
 
 export default function App() {
   const [query, setQuery] = useState('')
   const [collections, setCollections] = useState({ Saved: [] })
   const [showCollections, setShowCollections] = useState(false)
+  const [isDark, setIsDark] = useState(() => localStorage.getItem(THEME_KEY) === 'dark')
 
   useEffect(() => {
     try {
@@ -24,6 +26,11 @@ export default function App() {
   useEffect(() => {
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(collections)) } catch (e) {}
   }, [collections])
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark-theme', isDark)
+    try { localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light') } catch (e) {}
+  }, [isDark])
 
   function savePin(pin, collection = 'Saved') {
     setCollections(prev => {
@@ -49,7 +56,7 @@ export default function App() {
 
   return (
     <div className="app-root">
-      <Header value={query} onChange={setQuery} onToggleCollections={() => setShowCollections(s => !s)} savedCount={Object.values(collections).reduce((s,a)=>s+a.length,0)} />
+      <Header value={query} onChange={setQuery} onToggleCollections={() => setShowCollections(s => !s)} savedCount={Object.values(collections).reduce((s,a)=>s+a.length,0)} isDark={isDark} onToggleTheme={() => setIsDark(value => !value)} />
       {showCollections && (
         <Collections
           collections={collections}
